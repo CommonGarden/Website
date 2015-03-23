@@ -1,0 +1,14 @@
+.social-media {
+  float: right;
+  padding-top: 7px;
+  font-size: 1.4em;
+
+  a {
+    color: $brand-color;
+    padding: 3px;
+
+    &:hover {
+      color: darken($brand-color, 15%);
+    }
+  }
+}

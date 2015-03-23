@@ -1,0 +1,12 @@
+# Site settings
+title: Common Garden
+email: Jake@commongarden.org
+description: > # this means to ignore newlines until "baseurl:"
+  Open source software to make indoor farming easier than ever.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://commongarden.org" # the base hostname & protocol for your site
+twitter_username: Common_Garden
+github_username:  CommonGarden
+
+# Build settings
+markdown: kramdown
