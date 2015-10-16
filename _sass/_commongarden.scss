@@ -14,10 +14,28 @@ html, body {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     font-family: $base-font-family;
+    font-weight: 300;
     color: #ffffff;
 }
 
-// Brand //////////////////
+//// Forms
+input {
+  &.transparent-form {
+    background-color: transparent;
+    border: none !important;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: none !important;
+  }
+}
+
+.grande {
+  font-size: 4em;
+}
+//// General ////////////////
+
+//// Brand //////////////////
 .logo {
   max-width: 175px;
 }
@@ -47,6 +65,7 @@ html, body {
   
   body h1 {
     font-size: 18px;
+    font-family: inherit;
     line-height: 23px;
   } 
   
