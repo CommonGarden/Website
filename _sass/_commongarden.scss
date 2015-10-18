@@ -1,21 +1,41 @@
-html, body {
-    background-color: #000;
-    background-image: url("/img/banner_web.jpg");
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
+//// Header
+
+.banner {
+  height: 350px;
+  overflow: hidden;
+  background: -moz-linear-gradient(top, rgba(52, 153, 124, 0.42) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(52, 153, 124, 0.42))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(52, 153, 124, 0.42) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(52, 153, 124, 0.42) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(52, 153, 124, 0.42) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(52, 153, 124, 0.42) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+
+  img {
+    z-index: -3;
+    position: relative;
+  }
+
+  .logo {
+    position: relative;
+    top: -350px;
+    z-index: 5;
+
+    .plant {
+      max-width: 150px;
+    }
+
+    .commongarden {
+      color: #ffffff;
+    }
+  }
+}
+
+//// General
+
+body {
+    background-color: #fff;
     font-family: $base-font-family;
     font-weight: 300;
-    color: #ffffff;
 }
 
 //// Forms
@@ -24,20 +44,19 @@ input {
     background-color: transparent;
     border: none !important;
     font-size: 2em;
-    color: #ffffff;
+    height: 2em;
     text-align: center;
     box-shadow: none !important;
   }
 }
 
-.grande {
-  font-size: 4em;
-}
-//// General ////////////////
-
-//// Brand //////////////////
-.logo {
-  max-width: 175px;
+.cg-btn {
+  width: 300px;
+  border: 0px solid black;
+  // color: rgba(52, 153, 124, 0.42);
+  background-color: #34997C;
+  height: 75px;
+  font-size: 1.5em;
 }
 
 // /* For mobile devices */
@@ -53,55 +72,55 @@ input {
 // /* Media Queries */
 @media only screen and (max-width: 340px) {
   
-  .container {
-    position: relative;
-    display: block;
-    float: left;
-    vertical-align: baseline;
-    margin: 0 auto;
-    padding: 80px 0 0 0;
-  }
+  // .container {
+  //   position: relative;
+  //   display: block;
+  //   float: left;
+  //   vertical-align: baseline;
+  //   margin: 0 auto;
+  //   padding: 80px 0 0 0;
+  // }
 
   
-  body h1 {
-    font-size: 18px;
-    font-family: inherit;
-    line-height: 23px;
-  } 
+  // body h1 {
+  //   font-size: 18px;
+  //   font-family: inherit;
+  //   line-height: 23px;
+  // } 
   
-  .content, blockquote {  
-    display: inline;
-    margin: 0 auto;
-    padding-top: 80px;
-    vertical-align: baseline;
-  }
+  // .content, blockquote {  
+  //   display: inline;
+  //   margin: 0 auto;
+  //   padding-top: 80px;
+  //   vertical-align: baseline;
+  // }
 
-  blockquote {
-    width: 150px;
-    margin: 15px auto;
-    font-size: 16px;
-    line-height: 21px;
-    background-color: transparent;
-  }
+  // blockquote {
+  //   width: 150px;
+  //   margin: 15px auto;
+  //   font-size: 16px;
+  //   line-height: 21px;
+  //   background-color: transparent;
+  // }
 
-  blockquote cite {
-    font-size: 14px;
-    line-height: 19px;
-  }
+  // blockquote cite {
+  //   font-size: 14px;
+  //   line-height: 19px;
+  // }
 
-  .sub-title {
-    font-size: 14px;
-    line-height: 21px;
-  }
+  // .sub-title {
+  //   font-size: 14px;
+  //   line-height: 21px;
+  // }
 
-  .button, p {
-    max-width: 150px;
-    margin: 0 auto;
-    font-size: 15px;
-    line-height: 20px;
-  }
+  // .button, p {
+  //   max-width: 150px;
+  //   margin: 0 auto;
+  //   font-size: 15px;
+  //   line-height: 20px;
+  // }
 
-  html, body, .container {
-    height: auto;
-  }
+  // html, body, .container {
+  //   height: auto;
+  // }
 }
