@@ -1,17 +1,41 @@
 //// Header
+html {
+  height: 100%;
 
-.header-image {
-  height: 350px;
-  overflow: hidden;
-  z-index: -3;
-  background-size: cover;
-  position: relative;
-  background-image: url("/img/banner_web.jpg"); /* fallback */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/banner_web.jpg"); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* FF3.6+ */
-  background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* Opera 11.10+ */
-  background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/banner_web.jpg"); /* W3C */
+  body {
+    height: 100%;
+    background-color: #fff;
+    font-family: $base-font-family;
+    font-weight: 300;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .header-image {
+      background-size: cover;
+      background-image: url("/img/header.jpg"); /* fallback */
+      background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/header.jpg"); /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/header.jpg"); /* Chrome 10+, Saf5.1+ */
+      background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/header.jpg"); /* FF3.6+ */
+      background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/header.jpg"); /* Opera 11.10+ */
+      background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/header.jpg"); /* W3C */
+      z-index: -3;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      // z-index: -100;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-size: cover;
+    }
+  }
 }
 
 .content {
@@ -20,10 +44,7 @@
 }
 
 .logo {
-  position: relative;
-  top: -350px;
-  z-index: 5;
-  margin-top: 2em;
+  margin-top: 3em;
 
   .plant {
     max-width: 150px;
@@ -34,25 +55,17 @@
   }
 }
 
-//// General
-
-body {
-    background-color: #fff;
-    font-family: $base-font-family;
-    font-weight: 300;
-}
-
 //// Forms
-input {
-  &.transparent-form {
-    background-color: transparent;
-    border: none !important;
-    font-size: 2em;
-    height: 2em;
-    text-align: center;
-    box-shadow: none !important;
-  }
-}
+// input {
+//   &.transparent-form {
+//     background-color: transparent;
+//     border: none !important;
+//     font-size: 2em;
+//     height: 2em;
+//     text-align: center;
+//     box-shadow: none !important;
+//   }
+// }
 
 .cg-btn {
   color: rgba(0, 0, 0, 0.8);
