@@ -8,6 +8,13 @@ hr {
   margin-bottom: 50px;
 }
 
+
+ul {
+  &.nav {
+    margin-left: 0;
+  }
+}
+
 #email-signup {
   padding-top: 30px
 }
