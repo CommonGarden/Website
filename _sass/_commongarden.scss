@@ -5,7 +5,7 @@
 }
 
 .header-image {
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   z-index: -3;
   background-size: cover;
@@ -31,9 +31,10 @@
 
 .logo {
   position: relative;
-  top: -500px;
+  top: -400px;
   z-index: 5;
   margin-top: 2em;
+  margin-bottom: 2em;
 
   .plant {
     max-width: 150px;
