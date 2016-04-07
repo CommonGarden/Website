@@ -34,7 +34,7 @@ hr {
 
 .content {
   position: relative;
-  top: -420px;
+  top: -389px;
 }
 
 .logo {
@@ -64,52 +64,19 @@ body {
 //// Forms
 input {
   &.cg-input {
-    // background-color: transparent;
-    // border: none !important;
     font-size: 1.9em;
     height: 1.5em;
-    // text-align: center;
-    // box-shadow: none !important;
   }
 }
 
 .cg-btn {
-  // color: rgba(0, 0, 0, 0.8);
   background-color: #34997C;
 }
 
-
-@media only screen and (min-width: 768px) {
-  .call-to-action {
-    margin-top: 4em;
-    text-align: justify;
-    margin-bottom: 4em;
-
-    p { font-size: 1.7em; }
-  }
-
-
-  // .cg-btn {
-  //   width: 300px;
-  //   height: 75px;
-  //   font-size: 1.5em;
-  // }
+.cg-color {
+  background-color: #34997C;
 }
 
-// /* For mobile devices */
-@media only screen and (max-width: 767px) {
-    .call-to-action {
-      margin: 3em;
-
-      p { font-size: 1.7em; }
-    }
-
-  // .cg-btn {
-  //   width: 300px;
-  //   height: 75px;
-  //   font-size: 1.5em;
-  // }
-}
 
 .built-with {
   img {
@@ -120,40 +87,44 @@ input {
 }
 
 
+// /* Media Queries */
+@media only screen and (min-width: 768px) {
+  .call-to-action {
+    margin-top: 4em;
+    text-align: justify;
+    margin-bottom: 4em;
+
+    p { font-size: 1.7em; }
+  }
+}
+
+// /* For mobile devices */
 @media only screen and (max-width: 767px) {
-    //     // TODO: Optimize images for fastest loads.
-    //     /* The file size should be much smaller
-    //      * to improve page load speed on mobile internet connections */
-
-
     .call-to-action {
       margin: 3em;
 
-      p { font-size: 1.2em; }
+      p { font-size: 1.7em; }
     }
 
-    // .cg-btn {
-    //   width: 200px;
-    //   height: 50px;
-    //   font-size: 1.2em;
-    // }
+    //// Forms
+    input {
+      &.cg-input {
+        font-size: 1em;
+        height: 100%;
+      }
+    }
+
+    .cg-btn {
+      height: 3em;
+      font-size: 12px;
+    }
+
 }
 
-// /* Media Queries */
 @media only screen and (max-width: 340px) {
-  //     // TODO: Optimize images for fastest loads.
-  //     /* The file size should be much smaller
-  //      * to improve page load speed on mobile internet connections */
   .call-to-action {
     margin: 1em;
 
     p { font-size: 1em; }
   }
-
-  // .cg-btn {
-  //   width: 150px;
-  //   height: 45px;
-  //   font-size: .8em;
-  // }
-
 }
