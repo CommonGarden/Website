@@ -1,7 +1,15 @@
 //// Header
-#mce-EMAIL {
-  margin-top: 15px;
-  margin-bottom: 30px;
+#mc_embed_signup {
+  padding-top: 7px;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#email-signup {
+  padding-top: 30px
 }
 
 .header-image {
@@ -55,18 +63,18 @@ body {
 
 //// Forms
 input {
-  &.transparent-form {
-    background-color: transparent;
-    border: none !important;
-    font-size: 2em;
-    height: 2em;
-    text-align: center;
-    box-shadow: none !important;
+  &.cg-input {
+    // background-color: transparent;
+    // border: none !important;
+    font-size: 1.9em;
+    height: 1.5em;
+    // text-align: center;
+    // box-shadow: none !important;
   }
 }
 
 .cg-btn {
-  color: rgba(0, 0, 0, 0.8);
+  // color: rgba(0, 0, 0, 0.8);
   background-color: #34997C;
 }
 
@@ -81,11 +89,11 @@ input {
   }
 
 
-  .cg-btn {
-    width: 300px;
-    height: 75px;
-    font-size: 1.5em;
-  }
+  // .cg-btn {
+  //   width: 300px;
+  //   height: 75px;
+  //   font-size: 1.5em;
+  // }
 }
 
 // /* For mobile devices */
@@ -96,10 +104,18 @@ input {
       p { font-size: 1.7em; }
     }
 
-  .cg-btn {
-    width: 300px;
-    height: 75px;
-    font-size: 1.5em;
+  // .cg-btn {
+  //   width: 300px;
+  //   height: 75px;
+  //   font-size: 1.5em;
+  // }
+}
+
+.built-with {
+  img {
+    max-width: 200px;
+    padding: 10px;
+    opacity: 0.8;
   }
 }
 
@@ -116,11 +132,11 @@ input {
       p { font-size: 1.2em; }
     }
 
-    .cg-btn {
-      width: 200px;
-      height: 50px;
-      font-size: 1.2em;
-    }
+    // .cg-btn {
+    //   width: 200px;
+    //   height: 50px;
+    //   font-size: 1.2em;
+    // }
 }
 
 // /* Media Queries */
@@ -134,10 +150,10 @@ input {
     p { font-size: 1em; }
   }
 
-  .cg-btn {
-    width: 150px;
-    height: 45px;
-    font-size: .8em;
-  }
+  // .cg-btn {
+  //   width: 150px;
+  //   height: 45px;
+  //   font-size: .8em;
+  // }
 
 }

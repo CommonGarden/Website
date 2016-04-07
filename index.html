@@ -23,9 +23,9 @@ layout: default
   <div class="container">
         <div class="row call-to-action">
             <div class="col-lg-6 visible-lg">
-              <img src="img/greenthumb.png">    
+              <a href="https://twitter.com/search?q=%23OpenAg&src=typd"><img src="img/greenthumb.png"></a>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" id="email-signup">
               <p>We want to <em>enable everyone</em> to sustainably grow things; 
               for <em><span id="role">food</span></em>.</p>
 
@@ -35,12 +35,15 @@ layout: default
               <div id="mc_embed_signup">
                   <form action="//commongarden.us10.list-manage.com/subscribe/post?u=81f1da6ff0b51ea5d0fedefdb&amp;id=f23d844980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
-                      <div class="form-group">
-                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control transparent-form" placeholder="Enter email address" required>
+                      <div class="input-group">
+                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control cg-input" placeholder="Enter email address" required>
+                        <span class="input-group-btn">
+                          <input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn btn-lg">
+                        </span>
                       </div>
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;"><input type="text" name="b_81f1da6ff0b51ea5d0fedefdb_f23d844980" tabindex="-1" value=""></div>
-                        <div class="clear text-center"><input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn"></div>
+                        <!-- <div class="clear text-center"><input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn"></div> -->
                     </div>
                   </form>
               </div>
@@ -59,25 +62,25 @@ layout: default
       <div class="col-lg-6">
         <h3>We are making open software, hardware, and datasets for the Internet of Living Things.</h3>
 
-        <p>We will soon be launching the alpha version of our Grow-IoT framework and meteor app. It allows you to easily:</p>
+        <h4>We will soon be launching the alpha version of our Grow-IoT framework and meteor app. It allows you to easily:</h4>
           <ul>
             <li>Setup your own IoT network</li>
-            <li>Connect IoT devices and use them to control, monitor, and automate environmental variables like:</li>
+            <li>Securely connect IoT devices and use them to control and automate environmental variables like:</li>
             <ul>
               <li>Lighting</li>
               <li>Watering</li>
               <li>Ph</li>
               <li>Nutrient dosing</li>
             </ul>
-            <li>Organize and keep track of what you have growing, where, and when it will be ready.</li>
             <li>See realtime data streaming from sensors.</li>
-            <li>Create custom IoT devices with boards like the Raspberry Pi, ESP8266, or Chip ‘the $9 computer.'</li>
+            <li>Organize and keep track of what is growing.</li>
+            <li>Create custom IoT devices with boards like the <a href="https://www.raspberrypi.org/blog/raspberry-pi-zero/">$5 Raspberry Pi Zero</a>, <a href="https://tessel.io/">the extremely easy to use Tessel 2</a>, or <a href="http://getchip.com/">Chip ‘the $9 computer.'</a></li>
           </ul>
         </p>
 
-        <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        <!-- <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 
-        <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe> -->
 
       </div>
     </div>
@@ -86,17 +89,33 @@ layout: default
 
     <div class="row">
       <div class="col-lg-6">
-        <h3>Interoperable open hardware modules for computer controlled environments</h3>
-        <p>Build <a href="">"food computers"</a> using:</p>        
+        <h3>Interoperable hardware for controlled environments</h3>
+        <p>Build <a href="https://www.ted.com/talks/caleb_harper_this_computer_will_grow_your_food_in_the_future?language=en">"food computers"</a> using:</p>        
         <ul>
-          <li>Sensors: light, temperature, humidity, ph, CO2, electrical conductivity, dissolved oxygen, etc.</li>
-          <li>Acutators: smart power strips (with which people can connect lights, humidifiers, heaters, fans, air pumps), dosing pumps, etc.</li>
+          <li><strong>Sensors:</strong> light, temperature, humidity, ph, CO2, electrical conductivity, dissolved oxygen, etc.</li>
+          <li><strong>Acutators:</strong> smart power strips (with which people can connect lights, humidifiers, heaters, fans, air pumps), relays, dosing pumps, etc.</li>
         </ul>
       </div>
       <div class="col-lg-6 text-center">
         <img src="img/open-source.png">
         <img src="img/no_lockin.jpg">
-        <!-- <img src="img/opensci.png"> -->
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="container">
+      <div class="built-with row">
+        <div class="col-lg-12">
+          <h3>Built with powerful open source technologies:</h3>
+          <div class="text-center">
+            <a href="https://www.meteor.com/"><img src="img/meteor-logo.png"></a>
+            <a href="https://ethereum.org/"><img src="img/Ethereum.png"></a>
+            <a href="https://nodejs.org/en/"><img src="img/nodejs.png"></a>
+            <a href="https://www.tensorflow.org/"><img src="img/TensorFlow.png"></a>
+            <a href="https://ipfs.io/"><img src="img/ipfs-logo-white.png"></a>
+          </div>
+        </div> 
       </div>
     </div>
 
