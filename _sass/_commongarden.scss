@@ -29,12 +29,13 @@ ul {
   z-index: -3;
   background-size: cover;
   position: relative;
-  background-image: url("/img/banner_web.jpg"); /* fallback */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/banner_web.jpg"); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* FF3.6+ */
-  background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/banner_web.jpg"); /* Opera 11.10+ */
-  background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/banner_web.jpg"); /* W3C */
+  background-image: url("/img/bg1.jpg"); /* fallback */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/bg1.jpg"); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* FF3.6+ */
+  background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/bg1.jpg"); /* W3C */
+  background-position: 40% 20%;
 }
 
 .overview {
