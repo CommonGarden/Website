@@ -29,13 +29,14 @@ ul {
   z-index: -3;
   background-size: cover;
   position: relative;
-  background-image: url("/img/bg1.jpg"); /* fallback */
-  background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/bg1.jpg"); /* Saf4+, Chrome */
-  background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Chrome 10+, Saf5.1+ */
-  background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* FF3.6+ */
-  background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Opera 11.10+ */
-  background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/bg1.jpg"); /* W3C */
-  background-position: 40% 20%;
+  // background-image: url("/img/bg1.jpg"); /* fallback */
+  // background-image: -webkit-gradient(linear, left top, left bottom, from($background-color), to($background-color2)), url("/img/bg1.jpg"); /* Saf4+, Chrome */
+  // background-image: -webkit-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Chrome 10+, Saf5.1+ */
+  // background-image: -moz-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* FF3.6+ */
+  // background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Opera 11.10+ */
+  // background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/bg1.jpg"); /* W3C */
+  // background-position: 40% 20%;
+  background-color: $background-color;
 }
 
 .overview {
@@ -82,11 +83,11 @@ input {
 }
 
 .cg-btn {
-  background-color: #34997C;
+  background-color: #16a38f;
 }
 
 .cg-color {
-  background-color: #34997C;
+  background-color: #16a38f;
 }
 
 
