@@ -4,7 +4,7 @@ layout: default
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
   (function ($, undefined) {
-  var roleList = ["medicine", "materials", "subsistence", "profit", "enjoyment", "food", "a better world"]
+  var roleList = ["trees", "materials", "life", "food" ]
 
   function rollRole() {
     roleList.push(roleList.shift())
@@ -21,39 +21,42 @@ layout: default
 
 <section class="content" id="about">
   <div class="container overview">
-        <div class="row call-to-action">
-            <div class="col-lg-6">
-              <img src="img/growapp.png" style="padding: 20px; margin-top: 1em;">
-            </div>
 
-            <div class="col-lg-6" id="email-signup">
-              <p>Smart growing environments for hydroponics, aeroponics, aquaponics, bioreactors, etc.</p>
+    <div class="row">
+      <div class="col-lg-12 jumbotron text-center">
+        <h3>Hi! We're Common Garden,</h3>
+        <h3>We are passionate citizens making open source software to make growing <em><span id="role">food</span></em> easier.</h3>
 
-              <p>What will you grow?</p>
+        <p>What will you grow?</p>
 
-              <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px" style="margin-right:-35px;"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px" style="margin-right:-35px;"></iframe>
 
-              <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=CommonGarden&repo=Grow-IoT&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
 
-              <a href="https://gitter.im/CommonGarden/Grow-IoT?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://camo.githubusercontent.com/dbc99525f066867427942a9b1591c04c0a9e5119/68747470733a2f2f6261646765732e6769747465722e696d2f436f6d6d6f6e47617264656e2f47726f772d496f542e737667" alt="Join the chat at https://gitter.im/CommonGarden/Grow-IoT" data-canonical-src="https://badges.gitter.im/CommonGarden/Grow-IoT.svg" style="height: 26px; float: left; margin-right: 7px; margin-top: 2px;"></a>
+        <a href="https://gitter.im/CommonGarden/Grow-IoT?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" style="position: relative; bottom: 11px; left: -35px;"><img src="https://camo.githubusercontent.com/dbc99525f066867427942a9b1591c04c0a9e5119/68747470733a2f2f6261646765732e6769747465722e696d2f436f6d6d6f6e47617264656e2f47726f772d496f542e737667" alt="Join the chat at https://gitter.im/CommonGarden/Grow-IoT" data-canonical-src="https://badges.gitter.im/CommonGarden/Grow-IoT.svg" style="height: 26px;"></a>
 
-              <!-- Begin MailChimp Signup Form -->
-              <div id="mc_embed_signup">
-                  <form action="//commongarden.us10.list-manage.com/subscribe/post?u=81f1da6ff0b51ea5d0fedefdb&amp;id=f23d844980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                      <div class="input-group">
-                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control cg-input" placeholder="Enter email address" required>
-                        <span class="input-group-btn">
-                          <input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn btn-lg">
-                        </span>
-                      </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_81f1da6ff0b51ea5d0fedefdb_f23d844980" tabindex="-1" value=""></div>
-                        <!-- <div class="clear text-center"><input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn"></div> -->
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="//commongarden.us10.list-manage.com/subscribe/post?u=81f1da6ff0b51ea5d0fedefdb&amp;id=f23d844980" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <div class="input-group">
+                  <input type="email" value="" name="EMAIL" id="mce-EMAIL" class="form-control cg-input" placeholder="Enter email address" required>
+                  <span class="input-group-btn">
+                    <input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn btn-lg">
+                  </span>
+                </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;"><input type="text" name="b_81f1da6ff0b51ea5d0fedefdb_f23d844980" tabindex="-1" value=""></div>
+                  <!-- <div class="clear text-center"><input type="submit" value="Stay up to date" name="subscribe" id="mc-embedded-subscribe" class="btn cg-btn"></div> -->
                     </div>
                   </form>
               </div>
               <!--End mc_embed_signup-->
+      </div>
+    </div>
+        <div class="row call-to-action">
+            <div class="col-lg-12">
+              <img src="img/growapp.png" style="padding: 20px; margin-top: 1em;">
             </div>
         </div>
   </div>
