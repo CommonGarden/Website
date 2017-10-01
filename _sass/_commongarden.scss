@@ -35,11 +35,6 @@ hr {
   border-radius: 50% !important;
 }
 
-
-.team-v1 ul {
-  position: relative;
-}
-
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
@@ -55,7 +50,11 @@ hr {
   margin-bottom: 50px;
 }
 
-.team-v1 {
+.people {
+  ul {
+    position: relative;
+  }
+
   img {
     width: 100%;
     margin-bottom: 20px;
