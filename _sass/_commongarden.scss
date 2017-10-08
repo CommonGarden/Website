@@ -191,7 +191,8 @@ ul {
   // background-image: -o-linear-gradient(top, $background-color, $background-color2), url("/img/bg1.jpg"); /* Opera 11.10+ */
   // background-image: linear-gradient(to bottom, $background-color, $background-color2), url("/img/bg1.jpg"); /* W3C */
   // background-position: 40% 20%;
-  background-color: $background-color;
+  // background-color: $background-color;
+  background-image: radial-gradient(rgb(3, 84, 171) 41%, #37007d 97%);
 }
 
 .overview {
@@ -237,13 +238,19 @@ input {
   }
 }
 
+.grow {
+  font-size: 2em;
+  margin: 10px;
+  padding: 25px;
+}
+
 .cg-btn {
-  background-color: #16a38f;
+  background-color: rgb(3, 84, 171);
   color: white !important;
 }
 
 .cg-color {
-  background-color: #16a38f;
+  background-color: rgb(3, 84, 171);
 }
 
 
